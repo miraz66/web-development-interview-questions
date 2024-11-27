@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply styles only to the custom-scroll class */
+.custom-scroll::-webkit-scrollbar {
+    width: 12px; /* Standard width for a modern look */
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+    background: #1a1a1a; /* Dark background for contrast */
+    border-radius: 10px; /* Smooth rounded edges */
+    margin: 4px; /* Adds spacing around the scrollbar */
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+    background: #83cc0b; /* Bright lime-green thumb */
+    border-radius: 10px; /* Smooth round thumb */
+    border: 3px solid #1a1a1a; /* Spaced appearance between thumb and track */
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+    background: #c6f57f; /* Lighter green on hover for interactive feedback */
+    border: 3px solid #2d2d2d; /* Slightly darker border on hover */
+}
+
+/* Optional for Firefox */
+.custom-scroll {
+    scrollbar-width: thin; /* Minimal width */
+    scrollbar-color: #83cc0b #1a1a1a; /* Thumb color, track color */
+}
