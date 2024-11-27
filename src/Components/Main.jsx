@@ -1,6 +1,12 @@
-import {ReactQuestions} from "../assets/ReactQuestions.jsx";
+import { ReactQuestions } from "../assets/ReactQuestions.jsx";
 
-export default function Main() {
+export default function Main({questionName}) {
+  const data = [
+    {
+      name: "React",
+      data: questionName,
+    }
+  ]
   return (
     <div className="py-10 pl-5 col-span-3 grid grid-cols-5">
       <div className="col-span-4">

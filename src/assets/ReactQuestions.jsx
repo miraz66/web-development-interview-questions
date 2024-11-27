@@ -49,54 +49,55 @@ export const ReactQuestions = [
     id: 10,
     question: 'What is React?',
     answer: 'A JavaScript library for building user interfaces',
-  },{
-    id: 1,
+  },
+  {
+    id: 11,
     question: 'What is React?',
     answer: 'A JavaScript library for building user interfaces',
   },
   {
-    id: 2,
+    id: 12,
     question: 'What is React?',
     answer: 'A JavaScript library for building user interfaces',
   },
   {
-    id: 3,
+    id: 13,
     question: 'What is React?',
     answer: 'A JavaScript library for building user interfaces',
   },
   {
-    id: 4,
+    id: 14,
     question: 'What is React?',
     answer: 'A JavaScript library for building user interfaces',
   },
   {
-    id: 5,
+    id: 15,
     question: 'What is React?',
     answer: 'A JavaScript library for building user interfaces',
   },
   {
-    id: 6,
+    id: 16,
     question: 'What is React?',
     answer: 'A JavaScript library for building user interfaces',
   },
   {
-    id: 7,
+    id: 17,
     question: 'What is React?',
     answer: 'A JavaScript library for building user interfaces',
   },
   {
-    id: 8,
+    id: 18,
     question: 'What is React?',
     answer: 'A JavaScript library for building user interfaces',
   },
   {
-    id: 9,
+    id: 19,
     question: 'What is React?',
     answer: 'A JavaScript library for building user interfaces',
   },
   {
-    id: 10,
+    id: 20,
     question: 'What is React?',
     answer: 'A JavaScript library for building user interfaces',
-  },
+  }
 ]

@@ -36,7 +36,8 @@ const data = [
   'Elasticsearch',
   'Kafka',
 ]
-export default function SideBar() {
+
+export default function SideBar({questionName, setQuestionName}) {
   return (
     <div className="h-screen w-72 fixed py-10 overflow-y-auto custom-scroll">
       <div className="text-white flex items-center gap-2">
@@ -48,8 +49,8 @@ export default function SideBar() {
         <h1 className="text-neutral-400 text-xl font-bold">Categories</h1>
 
         <ul className="text-white mt-5 space-y-2">
-          {data.map((item) => (
-            <li key={item.length} className="text-sm text-gray-400 hover:text-lime-400 cursor-pointer">{item}</li>
+          {data.map((item, index) => (
+            <li onClick={() => setQuestionName(item)} key={index} className="text-sm text-gray-400 hover:text-lime-400 cursor-pointer">{item}</li>
           ))}
         </ul>
       </div>
