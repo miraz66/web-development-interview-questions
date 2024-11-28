@@ -48,7 +48,7 @@ export default function SideBar({questionName, setQuestionName}) {
       </div>
 
       <div className="mt-10">
-        <h1 className="text-neutral-400 text-xl font-bold">Categories</h1>
+        <h1 className="text-neutral-400 text-xl font-bold">Categories bar</h1>
 
         <ul className="text-white mt-5 space-y-2">
           {data.map((item, index) => (
