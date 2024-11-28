@@ -1,43 +1,45 @@
 import logo from "../assets/logo.png"
+import clsx from "clsx";
 
 const data = [
-  'React',
-  'JavaScript',
-  'PHP',
-  'MySql',
-  'Laravel',
+  'react',
+  'javaScript',
+  'pHP',
+  'mySql',
+  'laravel',
   'python',
   '.Net',
-  'Java',
-  'C++',
-  'C#',
-  'Swift',
-  'Kotlin',
-  'Go',
-  'Rust',
-  'Ruby',
-  'SQL',
-  'HTML',
-  'CSS',
-  'Vue',
-  'Angular',
-  'React Native',
-  'Flutter',
-  'Node.js',
-  'Express.js',
-  'MongoDB',
-  'MySQL',
-  'PostgreSQL',
-  'Oracle Database',
-  'Microsoft SQL Server',
-  'SQLite',
-  'Redis',
-  'Memcached',
-  'Elasticsearch',
-  'Kafka',
+  'java',
+  'c++',
+  'c#',
+  'swift',
+  'kotlin',
+  'go',
+  'rust',
+  'ruby',
+  'sQL',
+  'hTML',
+  'cSS',
+  'vue',
+  'angular',
+  'react Native',
+  'flutter',
+  'node.js',
+  'express.js',
+  'mongoDB',
+  'mySQL',
+  'postgreSQL',
+  'oracle Database',
+  'microsoft SQL Server',
+  'sQLite',
+  'redis',
+  'memcached',
+  'lasticsearch',
+  'kafka',
 ]
 
 export default function SideBar({questionName, setQuestionName}) {
+  console.log( questionName )
   return (
     <div className="h-screen w-72 fixed py-10 overflow-y-auto custom-scroll">
       <div className="text-white flex items-center gap-2">
@@ -50,7 +52,7 @@ export default function SideBar({questionName, setQuestionName}) {
 
         <ul className="text-white mt-5 space-y-2">
           {data.map((item, index) => (
-            <li onClick={() => setQuestionName(item)} key={index} className="text-sm text-gray-400 hover:text-lime-400 cursor-pointer">{item}</li>
+          <li onClick={() => setQuestionName(item)} key={index} className={clsx("text-sm capitalize",  questionName === item ? "text-lime-400" : "text-gray-400 hover:text-lime-400 cursor-pointer")}>{item}</li>
           ))}
         </ul>
       </div>

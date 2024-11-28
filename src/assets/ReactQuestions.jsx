@@ -11,6 +11,9 @@ export const ReactQuestions = [
         id: 2,
         question: 'What is React?',
         answer: 'A JavaScript library for building user interfaces',
+        example: 'const arr = [1, 2, 3];\n' +
+                'const [a, b] = arr;\n',
+        type: 'javascript'
       },
       {
         id: 3,
@@ -47,6 +50,7 @@ export const ReactQuestions = [
         id: 9,
         question: 'What is React?',
         answer: 'A JavaScript library for building user interfaces',
+        type: "code",
       },
       {
         id: 10,

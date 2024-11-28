@@ -1,27 +1,341 @@
 export const LaravelQuestions = [
   {
     type: "basic",
-    question: [
+    questions:[
       {
         id: 1,
-        question: "What is a closure?",
-        answer: "The combination of a function and the lexical environment within which that function was declared.",
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
       },
       {
         id: 2,
-        question: "What is a callback function?",
-        answer: "A function that is passed as an argument to another function and is executed within that function.",
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
       },
       {
         id: 3,
-        question: "What is a promise?",
-        answer: "A JavaScript object that allows you to handle asynchronous operations.",
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
       },
       {
         id: 4,
-        question: "What is a class in JavaScript?",
-        answer: "A blueprint for creating objects with pre-defined properties and methods.",
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
       },
+      {
+        id: 5,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 6,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 7,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces.A JavaScript library for building user interfaces.' +
+            'A JavaScript library for building user interfaces.',
+      },
+      {
+        id: 8,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 9,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 10,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 11,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 12,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 13,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 14,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 15,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 16,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 17,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 18,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 19,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 20,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      }
+    ]
+  },
+  {
+    type: "intermediate",
+    questions:[
+      {
+        id: 1,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 2,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 3,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 4,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 5,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 6,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 7,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces.A JavaScript library for building user interfaces.' +
+            'A JavaScript library for building user interfaces.',
+      },
+      {
+        id: 8,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 9,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 10,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 11,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 12,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 13,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 14,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 15,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 16,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 17,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 18,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 19,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 20,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      }
+    ]
+  },
+  {
+    type: "advanced",
+    questions:[
+      {
+        id: 1,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+        example: 'Route::get(\'/profile\', ProfileController::class)\n' +
+            '    ->middleware(\'auth\');',
+      },
+      {
+        id: 2,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 3,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 4,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 5,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 6,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 7,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces.A JavaScript library for building user interfaces.' +
+            'A JavaScript library for building user interfaces.',
+      },
+      { id: 8,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 9,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 10,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 11,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 12,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 13,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 14,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 15,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 16,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 17,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 18,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 19,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 20,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 21,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 22,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 23,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      },
+      {
+        id: 24,
+        question: 'What is React?',
+        answer: 'A JavaScript library for building user interfaces',
+      }
     ]
   }
   ]

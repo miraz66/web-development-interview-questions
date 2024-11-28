@@ -49,29 +49,29 @@ export const  JavaScriptQuestions = [
       }
     ]
       },
+  {
+    type: "advanced",
+    questions: [
       {
-        type: "advanced",
-        questions: [
-          {
-            id: 9,
-            question: "What is a closure?",
-            answer: "A closure is a function that has access to variables defined in its parent scope, even after the parent function has returned.",
-          },
-          {
-            id: 10,
-            question: "What is a callback function?",
-            answer: "A function that is passed as an argument to another function and is executed within that function.",
-          },
-          {
-            id: 11,
-            question: "What is a generator function?",
-            answer: "A generator function is a special type of function that can be used to create iterators.",
-          },
-          {
-            id: 12,
-            question: "What is a proxy?",
-            answer: "A proxy is an object that controls access to another object.",
-          }
-        ]
+        id: 9,
+        question: "What is a closure?",
+        answer: "A closure is a function that has access to variables defined in its parent scope, even after the parent function has returned.",
+      },
+      {
+        id: 10,
+        question: "What is a callback function?",
+        answer: "A function that is passed as an argument to another function and is executed within that function.",
+      },
+      {
+        id: 11,
+        question: "What is a generator function?",
+        answer: "A generator function is a special type of function that can be used to create iterators.",
+      },
+      {
+        id: 12,
+        question: "What is a proxy?",
+        answer: "A proxy is an object that controls access to another object.",
       }
+    ]
+  }
   ]

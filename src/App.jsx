@@ -3,7 +3,7 @@ import SideBar from "./Components/SideBar.jsx";
 import Main from "./Components/Main.jsx";
 
 function App() {
-  const [questionName, setQuestionName] = useState('')
+  const [questionName, setQuestionName] = useState('react')
   console.log(questionName)
 
   return (
