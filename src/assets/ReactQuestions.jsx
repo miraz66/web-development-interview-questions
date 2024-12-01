@@ -429,10 +429,148 @@ export const ReactQuestions = [
     type: "advanced",
     questions: [
       {
-        id: 33,
+        id: 1,
         question: "What is a memo?",
         answer:
           "A memo is a function that takes a component as an argument and returns a new component.",
+      },
+      {
+        id: 2,
+        question: "What are React hooks?",
+        answer:
+          "React hooks are functions that allow you to 'hook into' React state and lifecycle features from functional components. Examples include useState, useEffect, and useContext.",
+      },
+      {
+        id: 3,
+        question: "What is the useState hook? Provide an example.",
+        answer:
+          " The useState hook is used to manage state in functional components.",
+        example: `const [count, setCount] = useState(0);`,
+      },
+      {
+        id: 4,
+        question: "What is the useEffect hook?",
+        answer:
+          "The useEffect hook allows you to perform side effects in functional components, such as fetching data, updating the DOM, or subscribing to events. It replaces lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount.",
+      },
+      {
+        id: 5,
+        question: "What is the purpose of the useContext hook?",
+        answer:
+          "The useContext hook allows you to access the value of a context directly in functional components, without needing to use a Consumer component.",
+      },
+      {
+        id: 6,
+        question: "How do you manage side effects in React using useEffect?",
+        answer:
+          "useEffect accepts a function and an optional dependency array. The function runs after the render and can clean up when the component unmounts or when dependencies change.",
+        example: `useEffect(() => {
+  fetchData();
+}, []);
+`,
+      },
+      {
+        id: 7,
+        question: "What is the useReducer hook, and when should you use it?",
+        answer:
+          "useReducer is a hook for managing complex state logic in functional components. It is ideal for cases where you have multiple state variables that depend on each other or involve complex logic. It works similarly to Redux reducers.",
+      },
+      {
+        id: 8,
+        question: "What is the useCallback hook?",
+        answer:
+          "The useCallback hook returns a memoized version of a callback function that only changes if one of the dependencies has changed. It helps prevent unnecessary re-renders of child components.",
+      },
+      {
+        id: 9,
+        question: "What is the useMemo hook?",
+        answer:
+          "The useCallback hook returns a memoized version of a callback function that only changes if one of the dependencies has changed. It helps prevent unnecessary re-renders of child components.",
+      },
+      {
+        id: 10,
+        question: "What is the useRef hook?",
+        answer:
+          "useRef is a hook that returns a mutable object with a .current property, allowing you to persist values across renders without causing re-renders. It can also be used to directly access DOM elements.",
+      },
+      {
+        id: 11,
+        question:
+          "What is the difference between useEffect and useLayoutEffect?",
+        answer:
+          "useEffect runs after the render is committed to the screen, while useLayoutEffect runs synchronously after the DOM has been mutated but before the browser has painted.",
+      },
+      {
+        id: 12,
+        question: "What is the useImperativeHandle hook?",
+        answer:
+          "useImperativeHandle allows you to customize the instance value that is exposed when using ref in functional components. It is often used in combination with forwardRef.",
+      },
+      {
+        id: 13,
+        question: "What is the useContext hook, and how is it used?",
+        answer:
+          "useContext is used to subscribe to the value of a context within a functional component. It allows components to access shared data without passing props down manually.",
+      },
+      {
+        id: 14,
+        question:
+          "What are the benefits of using React hooks over class components?",
+        answer:
+          "Hooks provide a simpler and more concise way to manage state and side effects in functional components. They also eliminate the need for lifecycle methods and allow sharing stateful logic across components.",
+      },
+      {
+        id: 15,
+        question: "What are custom hooks in React?",
+        answer:
+          "Custom hooks are JavaScript functions that can use other hooks to share reusable logic across components. For example, a custom hook could be created to fetch data from an API.",
+      },
+      {
+        id: 16,
+        question: "How does useEffect work with dependencies?",
+        answer:
+          "useEffect accepts a dependency array. If any value in the array changes, the effect will run again. If the array is empty, the effect will run once when the component mounts.",
+      },
+      {
+        id: 17,
+        question: "Can you explain the cleanup function in useEffect?",
+        answer:
+          " The cleanup function is returned from the effect function and is run when the component unmounts or when the effect dependencies change. It’s used to clean up subscriptions, timers, or other side effects.",
+      },
+      {
+        id: 18,
+        question: "",
+        answer: "",
+      },
+      {
+        id: 19,
+        question: "",
+        answer: "",
+      },
+      {
+        id: 20,
+        question: "",
+        answer: "",
+      },
+      {
+        id: 21,
+        question: "",
+        answer: "",
+      },
+      {
+        id: 22,
+        question: "",
+        answer: "",
+      },
+      {
+        id: 23,
+        question: "",
+        answer: "",
+      },
+      {
+        id: 24,
+        question: "",
+        answer: "",
       },
     ],
   },
