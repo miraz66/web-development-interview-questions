@@ -539,38 +539,196 @@ export const ReactQuestions = [
       },
       {
         id: 18,
-        question: "",
-        answer: "",
+        question: "What happens when a useEffect hook has no dependencies?",
+        answer:
+          "If a useEffect hook has no dependencies, it runs after every render.",
       },
       {
         id: 19,
-        question: "",
-        answer: "",
+        question: "What is the useLayoutEffect hook used for?",
+        answer:
+          "LayoutEffect is used when you need to measure DOM elements and make changes to the DOM synchronously before the browser paints.",
       },
       {
         id: 20,
-        question: "",
-        answer: "",
+        question: "How do you prevent unnecessary re-renders in React?",
+        answer:
+          "To prevent unnecessary re-renders, you can use React.memo to memoize components, useCallback for callback functions, and useMemo for expensive calculations.",
       },
       {
         id: 21,
-        question: "",
-        answer: "",
+        question: "How do you pass state between components using hooks?",
+        answer:
+          "State can be passed between components using props, or shared using React’s useContext hook, which provides access to context values across the component tree.",
       },
       {
         id: 22,
-        question: "",
-        answer: "",
+        question: "How does the useState hook work with functions?",
+        answer:
+          "The useState hook can accept a function that returns the initial state. This is useful when the initial state depends on a calculation or value that is expensive to compute.",
       },
       {
         id: 23,
-        question: "",
-        answer: "",
+        question: "What are the limitations of React hooks?",
+        answer:
+          "Hooks cannot be used conditionally (i.e., they must be called in the same order on every render), and they cannot be called inside loops, conditions, or nested functions.",
       },
       {
         id: 24,
-        question: "",
-        answer: "",
+        question:
+          "What is the useEffect hook's behavior when no dependencies are provided?",
+        answer:
+          "When no dependencies are provided, useEffect runs after every render, similar to the componentDidUpdate lifecycle method in class components.",
+      },
+      {
+        id: 25,
+        question: "How do you handle forms in React using hooks?",
+        answer:
+          "You can handle forms in React by using useState to track form values and useEffect to manage form validation or submissions.",
+      },
+      {
+        id: 26,
+        question: "How do you manage errors in React hooks?",
+        answer:
+          " Errors in React hooks can be managed with try/catch blocks within useEffect or other hooks, and by using error boundaries at higher levels in the component tree.",
+      },
+      {
+        id: 27,
+        question: "What is React’s Suspense?",
+        answer:
+          " Suspense is a React feature that helps manage asynchronous rendering by waiting for certain operations (like data fetching) to complete before rendering UI.",
+      },
+      {
+        id: 28,
+        question: "What is React.lazy?",
+        answer:
+          "React.lazy allows you to dynamically import components in React, enabling code-splitting and reducing the initial bundle size.",
+      },
+      {
+        id: 29,
+        question: "How do you handle state management in React applications?",
+        answer:
+          "State management in React can be done using local component state, the context API, or third-party libraries like Redux or MobX.",
+      },
+      {
+        id: 30,
+        question: "What is the Context API, and when should you use it?",
+        answer:
+          "The Context API is used to share values (like theme or authentication status) between components without prop drilling. It is ideal for global state management.",
+      },
+      {
+        id: 31,
+        question: "What is Redux, and how does it work with React?",
+        answer:
+          "Redux is a state management library that stores application state in a single immutable store. It uses actions and reducers to update state and is commonly used with React for managing large-scale application state.",
+      },
+      {
+        id: 32,
+        question: "What is a higher-order component (HOC) in React?",
+        answer:
+          " A higher-order component is a function that takes a component and returns a new component with additional functionality, such as data fetching or authorization checks.",
+      },
+      {
+        id: 33,
+        question: "What is the difference between state and props in React?",
+        answer:
+          " Props are read-only values passed to a component from its parent, while state is managed within a component and can be changed over time.",
+      },
+      {
+        id: 34,
+        question: "What is React.memo used for?",
+        answer:
+          "React.memo is used to memoize functional components, preventing re-renders if the props have not changed.",
+      },
+      {
+        id: 35,
+        question: "What are controlled components in React?",
+        answer:
+          " Controlled components are form elements whose value is controlled by React state, with every change in the input being handled through an event.",
+      },
+      {
+        id: 36,
+        question: "How do you optimize performance in React applications?",
+        answer:
+          ": Performance can be optimized by using memoization techniques (React.memo, useMemo, useCallback), lazy loading, code splitting, and avoiding unnecessary re-renders.",
+      },
+      {
+        id: 37,
+        question: "What is the difference between useState and useReducer?",
+        answer:
+          "useState is for managing simple state, while useReducer is ideal for complex state logic and when multiple state updates depend on each other.",
+      },
+      {
+        id: 38,
+        question: "What is the difference between class components and functional components with hooks?",
+        answer: ": Class components manage state and lifecycle methods using this, while functional components with hooks manage state and side effects using functions like useState and useEffect.",
+      },
+      {
+        id: 39,
+        question: "What is React.PureComponent?",
+        answer: " React.PureComponent is a base class for components that implement shouldComponentUpdate with a shallow prop and state comparison, helping to prevent unnecessary re-renders.",
+      },
+      {
+        id: 40,
+        question: "How do you handle routing in React?",
+        answer: "Routing in React is typically handled using the react-router-dom library, which provides components like Route, Link, and BrowserRouter to manage navigation.",
+      },
+      {
+        id: 41,
+        question: "What is React’s Virtual DOM, and how does it work?\n",
+        answer: " The Virtual DOM is an in-memory representation of the real DOM that allows React to perform efficient updates. When state or props change, React compares the Virtual DOM to the real DOM (a process called \"reconciliation\") and updates only the necessary parts.",
+      },
+      {
+        id: 42,
+        question: "What is React Server-side Rendering (SSR)?",
+        answer: "SSR is the process of rendering React components on the server and sending HTML to the browser, improving initial load time and SEO.",
+      },
+      {
+        id: 43,
+        question: "What is React’s Concurrent Mode?",
+        answer: "Concurrent Mode is an experimental feature in React that allows React to interrupt rendering and prioritize important updates, improving the app’s responsiveness and performance.",
+      },
+      {
+        id: 44,
+        question: "What is the purpose of key in React lists?",
+        answer: "The key attribute helps React identify which items have changed, been added, or removed in lists, enabling efficient re-rendering of only the modified elements.\n" +
+            "\n",
+      },
+      {
+        id: 45,
+        question: "How does React handle event binding in functional components?",
+        answer: " In functional components, event handlers are automatically bound to the component context, unlike class components where you need to bind event handlers manually in the constructor.",
+      },
+      {
+        id: 46,
+        question: "What is the difference between componentDidMount and useEffect?",
+        answer: "componentDidMount is used in class components to run code after the initial render, while useEffect can run side effects after every render or when dependencies change in functional components.\n" +
+            "\n",
+      },
+      {
+        id: 47,
+        question: "How do you handle error boundaries in React?",
+        answer: " Error boundaries are components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of crashing the app.",
+      },
+      {
+        id: 48,
+        question: "What is a render prop in React?",
+        answer: "A render prop is a technique for sharing code between components by passing a function as a prop that returns a React element, allowing dynamic rendering.",
+      },
+      {
+        id: 49,
+        question: "What is React Fragments?",
+        answer: "React Fragments allow you to group multiple elements without adding an extra node to the DOM, providing cleaner code and reducing unnecessary wrapping divs.",
+      },
+      {
+        id: 50,
+        question: "What is the use of React.forwardRef?",
+        answer: "React.forwardRef allows you to pass a ref through a component to one of its children, enabling direct manipulation of the child component’s DOM.",
+      },
+      {
+        id: 51,
+        question: "What are hooks’ rules in React?",
+        answer: "Hooks must be called at the top level of functional components and not conditionally. They must also be called in the same order on every render.",
       },
     ],
   },

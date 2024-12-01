@@ -58,27 +58,29 @@ export default function Main({ questionName }) {
               {section.questions.map((item) => (
                 <div
                   key={`${section.type}-${item.id}`}
-                  className="my-5 text-gray-400"
+                  className="my-5 text-gray-400 flex gap-2"
                 >
-                  <span className="text-xs font-semibold">Q{item.id}: </span>
-                  <h1 className="text-base font-medium">{item.question}</h1>
-                  <p className="text-sm leading-7">{item.answer}</p>
+                  <p className="text-sm font-medium">{item.id}.</p>
+                  <div>
+                    <h1 className="text-base font-medium">{item.question}</h1>
+                    <p className="text-sm leading-7">{item.answer}</p>
 
-                  {item.example && (
-                    <div className="mt-2">
-                      <h1 className="text-xs font-medium pb-1">Example: </h1>
-                      <SyntaxHighlighter
-                        className="text-sm leading-7"
-                        language={
-                          item.type ? item.type : questionName.toLowerCase()
-                        }
-                        style={atomOneDark}
-                        customStyle={{ borderRadius: "10px" }}
-                      >
-                        {item.example}
-                      </SyntaxHighlighter>
-                    </div>
-                  )}
+                    {item.example && (
+                      <div className="mt-2">
+                        <h1 className="text-xs font-medium pb-1">Example: </h1>
+                        <SyntaxHighlighter
+                          className="text-sm leading-7"
+                          language={
+                            item.type ? item.type : questionName.toLowerCase()
+                          }
+                          style={atomOneDark}
+                          customStyle={{ borderRadius: "10px" }}
+                        >
+                          {item.example}
+                        </SyntaxHighlighter>
+                      </div>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
