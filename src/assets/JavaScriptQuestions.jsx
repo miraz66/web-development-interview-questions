@@ -105,6 +105,12 @@ const: Declares a block-scoped, read-only constant that must be initialized duri
         answer:
           "The event loop is a mechanism that handles asynchronous code execution in JavaScript. It continuously checks the message queue and pushes messages (callbacks) to the call stack for execution when the call stack is empty.",
       },
+      {
+        id: 16,
+        question: "What is the event loop in JavaScript?",
+        answer:
+          "The event loop is a mechanism that handles asynchronous code execution in JavaScript. It continuously checks the message queue and pushes messages (callbacks) to the call stack for execution when the call stack is empty.",
+      },
     ],
   },
   {
