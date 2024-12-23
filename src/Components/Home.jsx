@@ -3,11 +3,12 @@ import { JavaScriptQuestions } from "../assets/JavaScriptQuestions.jsx";
 import { LaravelQuestions } from "../assets/LaravelQuestions.jsx";
 import { useState, useEffect } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs"; // Example style
+import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { MySqlQuestions } from "../assets/MySqlQuestions.jsx";
-import clsx from "clsx";
+import MdxFile from "../assets/Content/JavaScript.mdx";
+import {MDXComponent} from "./MDXComponent.jsx";
 
-export default function Main({ questionName }) {
+export default function Home({ questionName }) {
   const [activeSection, setActiveSection] = useState("basic");
 
   // Determine which question set to use
@@ -47,7 +48,7 @@ export default function Main({ questionName }) {
 
   return (
     <div className="py-10 col-span-3 grid grid-cols-5 min-h-screen">
-      {/* Main content */}
+       Main content
       <div className="col-span-4 pl-5 pr-10">
         {questions.map((section) => (
           <div key={section.type} id={section.type}>
@@ -88,6 +89,10 @@ export default function Main({ questionName }) {
         ))}
       </div>
 
+      {/*<div className="col-span-4 pl-5 pr-10">*/}
+      {/*  <MdxFile components={MDXComponent} />*/}
+      {/*</div>*/}
+
       {/* Sidebar */}
       <div className="col-span-1">
         <div className="bg-gray-800/60 rounded-lg p-5 fixed">
@@ -112,3 +117,7 @@ export default function Main({ questionName }) {
     </div>
   );
 }
+
+Home.propTypes = {
+  questionName: String,
+};
