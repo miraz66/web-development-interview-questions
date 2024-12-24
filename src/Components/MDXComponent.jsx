@@ -25,6 +25,7 @@ export const MDXComponent = {
       </a>
   ),
   li: ({ children }) => <li className="text-xl leading-normal ">{children}</li>,
+  span: ({ children }) => <span className="text-xl leading-normal ">{children}</span>,
   ul: ({ children }) => <ul className="list-disc pl-10">{children}</ul>,
   ol: ({ children }) => <ul className="list-decimal pl-10">{children}</ul>,
   pre: ({ children }) => <Code>{children}</Code>,
