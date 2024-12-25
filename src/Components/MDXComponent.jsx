@@ -3,12 +3,12 @@ import Code from "./Code.jsx";
 
 export const MDXComponent = {
   h1: ({ children }) => (
-      <h1 className="text-xl pt-10 max-w-[850px] leading-[1.2] md:leading-[1.2] md:text-2xl font-bold text-yellow-500">
+      <h1 className="text-xl pt-10 max-w-[850px] leading-[1.2] md:leading-[1.2] md:text-2xl font-bold text-gray-400">
         {children}
       </h1>
   ),
   h2: ({ children }) => (
-      <h2 className="mt-4 text-lg leading-[1.2] font-medium text-yellow-600">
+      <h2 className="mt-4 text-lg leading-[1.2] font-medium text-gray-400">
         {children}
       </h2>
   ),
