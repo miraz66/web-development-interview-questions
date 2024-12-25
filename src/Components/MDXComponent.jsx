@@ -3,7 +3,7 @@ import Code from "./Code.jsx";
 
 export const MDXComponent = {
   h1: ({ children }) => (
-      <h1 className="text-xl max-w-[850px] leading-[1.2] md:leading-[1.2] md:text-2xl font-bold text-yellow-500">
+      <h1 className="text-xl pt-10 max-w-[850px] leading-[1.2] md:leading-[1.2] md:text-2xl font-bold text-yellow-500">
         {children}
       </h1>
   ),
@@ -14,7 +14,7 @@ export const MDXComponent = {
   ),
   h3: ({ children }) => <h3 className="mt-8 text-lg font-bold ">{children}</h3>,
   p: ({ children }) => (
-      <p className="my-2 text-sm leading-relaxed ">{children}</p>
+      <p className="my-2 text-sm leading-6 text-gray-400 tracking-wide">{children}</p>
   ),
   a: ({ children, href }) => (
       <a
@@ -32,5 +32,5 @@ export const MDXComponent = {
   code: ({ children }) => (
       <code className="rounded-md p-10 bg-red-200 ">{children}</code>
   ),
-  hr: () => <hr className="mt-10 border-neutral-300 border-2" />,
+  hr: () => <hr className="mt-10 border-neutral-500 border-spacing-0.5" />,
 };

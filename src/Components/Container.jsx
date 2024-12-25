@@ -15,7 +15,7 @@ export const Container = ({ children, meta }) => {
               <p className="text-sm opacity-80">
                 Written on {meta.publishedAt} by {meta.author}
               </p>
-              <p className="text-sm opacity-80 font-medium">{meta.description}</p>
+              <p className="text-sm opacity-80 font-medium leading-6 tracking-wide">{meta.description}</p>
               <hr className="mt-1 dark:border-gray-600 border-2" />
               <section className="mt-4 prose max-w-4xl ">
                 <MDXProvider>{children}</MDXProvider>

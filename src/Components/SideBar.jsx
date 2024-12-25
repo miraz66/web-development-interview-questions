@@ -28,7 +28,6 @@ const data = [
   "node.js",
   "express.js",
   "mongoDB",
-  "mySQL",
   "postgreSQL",
   "oracle Database",
   "microsoft SQL Server",
@@ -40,35 +39,39 @@ const data = [
 ];
 
 export default function SideBar({ questionName, setQuestionName }) {
-  console.log(questionName);
+  const handleCategoryClick = (category) => {
+    setQuestionName(category.toLowerCase());
+    // Scroll to the top of the content area
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
-    <div className="h-screen w-72 fixed py-10 overflow-y-auto custom-scroll">
-      <div className="text-white flex items-center gap-2">
-        <img className="w-10" src={logo} alt="logo" />
-        <h1 className="text-3xl font-bold text-lime-400">Questions</h1>
-      </div>
+      <div className="h-screen w-60 fixed py-10 overflow-y-auto custom-scroll">
+        <div className="text-white flex items-center gap-2">
+          <img className="w-10" src={logo} alt="logo" />
+          <h1 className="text-3xl font-bold text-lime-400">Questions</h1>
+        </div>
 
-      <div className="mt-10">
-        <h1 className="text-neutral-400 text-xl font-bold">Categories bar</h1>
-        <ul className="text-white mt-5 space-y-2">
-          {data.map((item, index) => (
-            <li
-              onClick={() => setQuestionName(item.toLowerCase())}
-              key={index}
-              className={clsx(
-                "text-sm capitalize",
-                questionName === item.toLowerCase()
-                  ? "text-lime-400"
-                  : "text-gray-400 hover:text-lime-400 cursor-pointer"
-              )}
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
+        <div className="mt-10">
+          <h1 className="text-neutral-400 text-xl font-bold">Categories bar</h1>
+          <ul className="text-white mt-5 space-y-2">
+            {data.map((item, index) => (
+                <li
+                    onClick={() => handleCategoryClick(item)}
+                    key={index}
+                    className={clsx(
+                        "text-sm capitalize",
+                        questionName === item.toLowerCase()
+                            ? "text-lime-400"
+                            : "text-gray-400 hover:text-lime-400 cursor-pointer"
+                    )}
+                >
+                  {item}
+                </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
   );
 }
 
