@@ -1,4 +1,7 @@
 import { Container } from "../../Components/Container.jsx";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+
 
 export const meta = {
   title: "React",
@@ -15,34 +18,175 @@ export default ({ children }) => <Container meta={meta}>{children}</Container>;
 # Basic Questions
 ---
 <div id="basic">
-## 1. What is JavaScript?
-JavaScript is a lightweight, interpreted, or just-in-time compiled programming language used to create dynamic and interactive content on websites. It is a core web technology, alongside HTML and CSS.
-## 2. What is a variable?
-A variable is a named container that allows you to store data in your code.
-## 3. What is a function?
-A function is a block of code designed to perform a particular task.
-## 4. What is a loop?
-A loop is a control flow statement that allows you to repeat a block of code multiple times.
-## 5. What is a conditional statement?
-A conditional statement is a control flow statement that allows you to execute different code based on a certain condition.
-## 6. What is a comment?
-A comment is a line of code that is not executed by the computer, but is used to provide additional information or instructions to the code.
-## 7. What is a data type?
-A data type is a category that defines the type of data a variable can hold.
-## 8. What is a primitive data type?
-A primitive data type is a basic data type that cannot be broken down into smaller parts.
-## 9. What is a non-primitive data type?
-A non-primitive data type is a data type that can be broken down into smaller parts.
-## 10. What is a closure?
-A closure is a combination of a function and the lexical environment within which it was defined.
-## 11. What is a prototype?
-A prototype is a built-in object that is used to create and manage objects in JavaScript.
-## 12. What is a constructor function?
-A constructor function is a function that is used to create objects.
-## 13. What is a class?
-A class is a template for creating objects.
-## 14. What is a prototype chain?
+  ## 1.What is React, and how does it work?
+  React is a JavaScript library for building user interfaces. It uses a virtual DOM to optimize the process of updating the actual DOM by comparing it to a virtual representation and only making necessary changes.
 
+  ## 2.What are the key features of React?
+  Key features include the virtual DOM, component-based architecture, unidirectional data flow, JSX syntax, and declarative UI.
+
+  ## 3.What is the difference between React and other frameworks like Angular or Vue?
+  React is a library focused on the view layer, while Angular and Vue are full-fledged frameworks that include tools for routing, state management, and more.
+
+  ## 4.What is JSX? Why do we use it in React?
+  JSX stands for JavaScript XML. It is a syntax extension for JavaScript that allows HTML-like structures to be written in JavaScript code. React uses JSX to define components and render UI.
+
+  ## 5.What is the virtual DOM?
+  The virtual DOM is a lightweight copy of the actual DOM that React uses to optimize updates by comparing the virtual DOM with the real DOM and updating only the changed elements.
+
+  ## 6.What is the difference between functional and class components?
+  Functional components are simpler and stateless, while class components support state and lifecycle methods. With hooks, functional components can now manage state and lifecycle events as well.
+
+  ## 7.What is the role of render() in React?
+  render() is a method in class components that returns JSX, which is rendered to the DOM.
+
+  ## 8.What is the purpose of React keys?
+  Keys help React identify which items have changed, been added, or removed from a list, optimizing performance by reducing unnecessary re-renders.
+
+  ## 9.Explain the concept of one-way data binding in React.
+  In React, data flows in one direction, from parent to child components via props, ensuring predictable and manageable UI states.
+
+  ## 10.What is a React element?
+  A React element is an immutable object that describes how a section of the UI should appear. It is the building block of React components.
+
+  ## 11.What are props in React?
+  Props are read-only attributes passed from parent components to child components in React.
+
+  ## 12.What is the difference between props and state in React?
+  Props are immutable and passed to components by their parent, while state is mutable and managed locally by the component.
+
+  ## 13.How do you create a React application?
+  You can create a React application by running the command npx create-react-app my-app or setting it up manually with tools like Webpack, Babel, and React.
+
+  ## 14.What are fragments in React?
+  Fragments are used to group multiple child elements without adding extra nodes to the DOM.
+
+  ## 15.What is the purpose of ReactDOM.render()?
+  ReactDOM.render() is used to render a React element or component to the actual DOM.
+
+  ## 16.What is the difference between React.Component and React.PureComponent?
+  React.Component does not implement shouldComponentUpdate by default, while React.PureComponent implements it with a shallow comparison of props and state to prevent unnecessary re-renders.
+
+  ## 17.What is React’s declarative approach?
+  React’s declarative approach allows developers to describe what the UI should look like at any point in time, with React automatically updating the DOM to match the desired state.
+
+  ## 18.How does React handle events?
+  React wraps browser events in a synthetic event system that provides consistent behavior across different browsers.
+
+  ## 19.What is a higher-order component (HOC)?
+  A higher-order component is a function that takes a component and returns a new component with added functionality, such as authentication or logging.
+
+  ## 20.What is the purpose of React.Children?
+  React.Children is a utility that provides methods to work with child elements, such as map, forEach, count, etc.
+
+  ## 21.What is reconciliation in React?
+  Reconciliation is the process by which React determines which changes need to be made to the DOM by comparing the previous virtual DOM with the new one.
+
+  ## 22.Can browsers read JSX directly?
+  No, JSX must be transpiled into JavaScript code using a tool like Babel before it can be executed in the browser.
+
+  ## 23.What is the difference between a controlled and uncontrolled component?
+  Controlled components have their state managed by React, while uncontrolled components manage their own state via the DOM.
+
+  ## 24.What is React.StrictMode?
+  React.StrictMode is a tool for highlighting potential issues in an application, such as unsafe lifecycle methods, deprecated APIs, or unexpected side effects.
+
+  ## 25.What are portals in React?
+  Portals allow you to render children into a DOM node outside of the parent component hierarchy, typically for rendering modals or tooltips.
+
+  Components and State Management (25 Questions)
+  ## 26.What is a React component?
+  A React component is a JavaScript function or class that returns a part of the UI (typically JSX) based on input data and state.
+
+  ## 27.How do you create a functional component in React?
+  You create a functional component by writing a function that returns JSX. Example:
+
+  Copy code
+  <SyntaxHighlighter language="javascript" style={atomOneDark}>
+    {`
+  function MyComponent() {
+    return <div>Hello, World!</div>;
+  }
+  `}
+  </SyntaxHighlighter>
+  ## 28.How do you manage state in a functional component?
+  You use the useState hook to manage state in a functional component. Example:
+
+  js
+  Copy code
+  <SyntaxHighlighter language="javascript" style={atomOneDark}>
+    {`
+  const [count, setCount] = useState(0);
+  `}
+  </SyntaxHighlighter>
+
+  ## 29.What is the useState hook? Provide an example.
+  The useState hook is used to add state to functional components. Example:
+
+  js
+  Copy code
+  <SyntaxHighlighter language="javascript" style={atomOneDark}>
+    {`
+  const [count, setCount] = useState(0);
+  `}
+  </SyntaxHighlighter>
+  ## 30.What is the difference between stateful and stateless components?
+  Stateful components manage and track state, while stateless components only receive props and render UI based on those props.
+
+  ## 31.How do you pass data from a parent to a child component?
+  You pass data through props, which are read-only values that the child component receives from the parent.
+
+  ## 32.What are default props? How do you set them?
+  Default props are values that are set for a component’s props in case the parent does not pass them. You set them like this:
+
+  js
+  Copy code
+  <SyntaxHighlighter language="javascript" style={atomOneDark}>
+    {`
+  MyComponent.defaultProps = {
+    name: 'Default Name',
+  };
+  `}
+  </SyntaxHighlighter>
+  ## 33.What is the context API?
+  The context API allows you to pass data through the component tree without manually passing props to each level, avoiding prop drilling.
+
+  ## 34.What is prop drilling, and how do you solve it?
+  Prop drilling occurs when you pass props through many layers of components. You can solve it using the context API or state management libraries like Redux.
+
+  ##What is lifting state up in React?
+  Lifting state up involves moving the state to a common parent component so that multiple child components can share the same state.
+
+  ## 35.What is the difference between local state and global state in React?
+  Local state is specific to a component and managed within it, while global state is shared across multiple components, typically managed with tools like Redux or the context API.
+
+  ## 36.How do you manage global state in React?
+  Global state can be managed using the context API or state management libraries like Redux, MobX, or Recoil.
+
+  ## 37.What is setState, and how does it work?
+  setState is a method in class components that updates the component’s state and triggers a re-render of the component.
+
+  ## 38.What is the importance of the callback in setState?
+  The callback in setState is executed after the state has been updated, allowing you to perform actions based on the updated state.
+
+  ## 39.What are React refs, and how do you use them?
+  Refs are used to access DOM nodes directly or store mutable values. Example:
+
+  js
+  Copy code
+  <SyntaxHighlighter language="javascript" style={atomOneDark}>
+    {`
+  const inputRef = useRef();
+  `}
+  </SyntaxHighlighter>
+
+  ## 40.What is the difference between controlled and uncontrolled inputs?
+  Controlled inputs are bound to state, and their value is controlled by React, while uncontrolled inputs are handled by the DOM.
+
+  ## 41.What is getDerivedStateFromProps used for?
+  getDerivedStateFromProps is a lifecycle method used to update state based on props before a component renders.
+
+  ## 42.What is the purpose of shouldComponentUpdate?
+  shouldComponentUpdate allows you to prevent unnecessary re-renders
 </div>
 
 # Intermediate Questions
