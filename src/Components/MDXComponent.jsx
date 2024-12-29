@@ -8,7 +8,7 @@ export const MDXComponent = {
       </h1>
   ),
   h2: ({ children }) => (
-      <h2 className="mt-4 text-lg leading-[1.2] font-medium text-gray-400">
+      <h2 className="mt-4 text-lg leading-8 font-medium text-gray-400">
         {children}
       </h2>
   ),

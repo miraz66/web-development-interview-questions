@@ -5,99 +5,97 @@ import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 export const meta = {
   title: "React",
-  banner: "hello",
-  publishedAt: "4 December 1995",
-  author: "Brendan Eich",
+  publishedAt: "May 29, 2013",
+  author: "Jordan Walke",
   description:
-      "JavaScript is a versatile, lightweight, and powerful programming language widely used for web development. It enables developers to create dynamic and interactive web applications, from handling user interactions to updating content without reloading the page. As the backbone of modern web technology, JavaScript seamlessly integrates with HTML and CSS, making it an essential skill for any web developer..",
+      "React is a free and open-source front-end JavaScript library that aims to make building user interfaces based on components more 'seamless'. It is maintained by Meta and a community of individual developers and companies.",
 };
 
 export default ({ children }) => <Container meta={meta}>{children}</Container>;
 
-
 # Basic Questions
 ---
 <div id="basic">
-  ## 1.What is React, and how does it work?
+  ## 1. What is React, and how does it work?
   React is a JavaScript library for building user interfaces. It uses a virtual DOM to optimize the process of updating the actual DOM by comparing it to a virtual representation and only making necessary changes.
 
-  ## 2.What are the key features of React?
+  ## 2. What are the key features of React?
   Key features include the virtual DOM, component-based architecture, unidirectional data flow, JSX syntax, and declarative UI.
 
-  ## 3.What is the difference between React and other frameworks like Angular or Vue?
+  ## 3. What is the difference between React and other frameworks like Angular or Vue?
   React is a library focused on the view layer, while Angular and Vue are full-fledged frameworks that include tools for routing, state management, and more.
 
-  ## 4.What is JSX? Why do we use it in React?
+  ## 4. What is JSX? Why do we use it in React?
   JSX stands for JavaScript XML. It is a syntax extension for JavaScript that allows HTML-like structures to be written in JavaScript code. React uses JSX to define components and render UI.
 
-  ## 5.What is the virtual DOM?
+  ## 5. What is the virtual DOM?
   The virtual DOM is a lightweight copy of the actual DOM that React uses to optimize updates by comparing the virtual DOM with the real DOM and updating only the changed elements.
 
   ## 6.What is the difference between functional and class components?
   Functional components are simpler and stateless, while class components support state and lifecycle methods. With hooks, functional components can now manage state and lifecycle events as well.
 
-  ## 7.What is the role of render() in React?
+  ## 7. What is the role of render() in React?
   render() is a method in class components that returns JSX, which is rendered to the DOM.
 
-  ## 8.What is the purpose of React keys?
+  ## 8. What is the purpose of React keys?
   Keys help React identify which items have changed, been added, or removed from a list, optimizing performance by reducing unnecessary re-renders.
 
-  ## 9.Explain the concept of one-way data binding in React.
+  ## 9. Explain the concept of one-way data binding in React.
   In React, data flows in one direction, from parent to child components via props, ensuring predictable and manageable UI states.
 
-  ## 10.What is a React element?
+  ## 10. What is a React element?
   A React element is an immutable object that describes how a section of the UI should appear. It is the building block of React components.
 
-  ## 11.What are props in React?
+  ## 11. What are props in React?
   Props are read-only attributes passed from parent components to child components in React.
 
-  ## 12.What is the difference between props and state in React?
+  ## 12. What is the difference between props and state in React?
   Props are immutable and passed to components by their parent, while state is mutable and managed locally by the component.
 
-  ## 13.How do you create a React application?
+  ## 13. How do you create a React application?
   You can create a React application by running the command npx create-react-app my-app or setting it up manually with tools like Webpack, Babel, and React.
 
-  ## 14.What are fragments in React?
+  ## 14. What are fragments in React?
   Fragments are used to group multiple child elements without adding extra nodes to the DOM.
 
-  ## 15.What is the purpose of ReactDOM.render()?
+  ## 15. What is the purpose of ReactDOM.render()?
   ReactDOM.render() is used to render a React element or component to the actual DOM.
 
-  ## 16.What is the difference between React.Component and React.PureComponent?
+  ## 16. What is the difference between React.Component and React.PureComponent?
   React.Component does not implement shouldComponentUpdate by default, while React.PureComponent implements it with a shallow comparison of props and state to prevent unnecessary re-renders.
 
-  ## 17.What is React’s declarative approach?
+  ## 17. What is React’s declarative approach?
   React’s declarative approach allows developers to describe what the UI should look like at any point in time, with React automatically updating the DOM to match the desired state.
 
-  ## 18.How does React handle events?
+  ## 18. How does React handle events?
   React wraps browser events in a synthetic event system that provides consistent behavior across different browsers.
 
-  ## 19.What is a higher-order component (HOC)?
+  ## 19. What is a higher-order component (HOC)?
   A higher-order component is a function that takes a component and returns a new component with added functionality, such as authentication or logging.
 
-  ## 20.What is the purpose of React.Children?
+  ## 20. What is the purpose of React.Children?
   React.Children is a utility that provides methods to work with child elements, such as map, forEach, count, etc.
 
-  ## 21.What is reconciliation in React?
+  ## 21. What is reconciliation in React?
   Reconciliation is the process by which React determines which changes need to be made to the DOM by comparing the previous virtual DOM with the new one.
 
-  ## 22.Can browsers read JSX directly?
+  ## 22. Can browsers read JSX directly?
   No, JSX must be transpiled into JavaScript code using a tool like Babel before it can be executed in the browser.
 
-  ## 23.What is the difference between a controlled and uncontrolled component?
+  ## 23. What is the difference between a controlled and uncontrolled component?
   Controlled components have their state managed by React, while uncontrolled components manage their own state via the DOM.
 
-  ## 24.What is React.StrictMode?
+  ## 24. What is React.StrictMode?
   React.StrictMode is a tool for highlighting potential issues in an application, such as unsafe lifecycle methods, deprecated APIs, or unexpected side effects.
 
-  ## 25.What are portals in React?
+  ## 25. What are portals in React?
   Portals allow you to render children into a DOM node outside of the parent component hierarchy, typically for rendering modals or tooltips.
 
   Components and State Management (25 Questions)
-  ## 26.What is a React component?
+  ## 26. What is a React component?
   A React component is a JavaScript function or class that returns a part of the UI (typically JSX) based on input data and state.
 
-  ## 27.How do you create a functional component in React?
+  ## 27. How do you create a functional component in React?
   You create a functional component by writing a function that returns JSX. Example:
 
   Copy code
@@ -108,7 +106,7 @@ export default ({ children }) => <Container meta={meta}>{children}</Container>;
   }
   `}
   </SyntaxHighlighter>
-  ## 28.How do you manage state in a functional component?
+  ## 28. How do you manage state in a functional component?
   You use the useState hook to manage state in a functional component. Example:
 
   js
@@ -119,7 +117,7 @@ export default ({ children }) => <Container meta={meta}>{children}</Container>;
   `}
   </SyntaxHighlighter>
 
-  ## 29.What is the useState hook? Provide an example.
+  ## 29. What is the useState hook? Provide an example.
   The useState hook is used to add state to functional components. Example:
 
   js
@@ -129,13 +127,13 @@ export default ({ children }) => <Container meta={meta}>{children}</Container>;
   const [count, setCount] = useState(0);
   `}
   </SyntaxHighlighter>
-  ## 30.What is the difference between stateful and stateless components?
+  ## 30. What is the difference between stateful and stateless components?
   Stateful components manage and track state, while stateless components only receive props and render UI based on those props.
 
-  ## 31.How do you pass data from a parent to a child component?
+  ## 31. How do you pass data from a parent to a child component?
   You pass data through props, which are read-only values that the child component receives from the parent.
 
-  ## 32.What are default props? How do you set them?
+  ## 32. What are default props? How do you set them?
   Default props are values that are set for a component’s props in case the parent does not pass them. You set them like this:
 
   js
@@ -147,28 +145,25 @@ export default ({ children }) => <Container meta={meta}>{children}</Container>;
   };
   `}
   </SyntaxHighlighter>
-  ## 33.What is the context API?
+  ## 33. What is the context API?
   The context API allows you to pass data through the component tree without manually passing props to each level, avoiding prop drilling.
 
-  ## 34.What is prop drilling, and how do you solve it?
+  ## 34. What is prop drilling, and how do you solve it?
   Prop drilling occurs when you pass props through many layers of components. You can solve it using the context API or state management libraries like Redux.
 
-  ##What is lifting state up in React?
-  Lifting state up involves moving the state to a common parent component so that multiple child components can share the same state.
-
-  ## 35.What is the difference between local state and global state in React?
+  ## 35. What is the difference between local state and global state in React?
   Local state is specific to a component and managed within it, while global state is shared across multiple components, typically managed with tools like Redux or the context API.
 
-  ## 36.How do you manage global state in React?
+  ## 36. How do you manage global state in React?
   Global state can be managed using the context API or state management libraries like Redux, MobX, or Recoil.
 
-  ## 37.What is setState, and how does it work?
+  ## 37. What is setState, and how does it work?
   setState is a method in class components that updates the component’s state and triggers a re-render of the component.
 
-  ## 38.What is the importance of the callback in setState?
+  ## 38. What is the importance of the callback in setState?
   The callback in setState is executed after the state has been updated, allowing you to perform actions based on the updated state.
 
-  ## 39.What are React refs, and how do you use them?
+  ## 39. What are React refs, and how do you use them?
   Refs are used to access DOM nodes directly or store mutable values. Example:
 
   js
@@ -179,65 +174,185 @@ export default ({ children }) => <Container meta={meta}>{children}</Container>;
   `}
   </SyntaxHighlighter>
 
-  ## 40.What is the difference between controlled and uncontrolled inputs?
+  ## 40. What is the difference between controlled and uncontrolled inputs?
   Controlled inputs are bound to state, and their value is controlled by React, while uncontrolled inputs are handled by the DOM.
 
-  ## 41.What is getDerivedStateFromProps used for?
+  ## 41. What is getDerivedStateFromProps used for?
   getDerivedStateFromProps is a lifecycle method used to update state based on props before a component renders.
 
-  ## 42.What is the purpose of shouldComponentUpdate?
+  ## 42. What is the purpose of shouldComponentUpdate?
   shouldComponentUpdate allows you to prevent unnecessary re-renders
-</div>
 
-# Intermediate Questions
----
-<div id="intermediate">
-## 1. What is a callback function?
-A callback function is a function that is passed as an argument to another function and is executed after the completion of that function.
-## 2. What is a promise?
-A promise is an object that represents the result of an asynchronous operation.
-## 3. What is a closure?
-A closure is a combination of a function and the lexical environment within which it was defined.
-## 4. What is a prototype?
-A prototype is a built-in object that is used to create and manage objects in JavaScript.
-## 5. What is a constructor function?
-A constructor function is a function that is used to create objects.
-## 6. What is a class?
-A class is a template for creating objects.
-## 7. What is a prototype chain?
-A prototype chain is a chain of objects that are used to create and manage objects in JavaScript.
-## 8. What is a generator function?
-A generator function is a function that can yield multiple values over time using the yield keyword. It returns an iterator that can be used to control the flow of function execution.
-## 9. What is a proxy?
-A proxy is an object that is used to intercept and modify the behavior of another object.
-## 10. What is a decorator?
-A decorator is a function that is used to modify the behavior of another function or object.
-
+  ## 43. What is lifting state up in React?
+  Lifting state up involves moving the state to a common parent component so that multiple child components can share the same state.
 </div>
 
 # Advanced Questions
 ---
-<div id="advanced">
-## 1. What is a module?
-A module is a file that contains code (variables, functions, classes) that can be exported and imported by other files to maintain separation of concerns and modularity.
-## 2. What is a shallow copy?
-A shallow copy copies only the top-level properties of an object or array.
-## 3. What is a deep copy?
-A deep copy recursively copies all levels of an object or array, including nested objects or arrays.
-## 4. What is a generator function?
-A generator function is a function that can yield multiple values over time using the yield keyword. It returns an iterator that can be used to control the flow of function execution.
-## 5. What is a proxy?
-A proxy is an object that is used to intercept and modify the behavior of another object.
-## 6. What is a decorator?
-A decorator is a function that is used to modify the behavior of another function or object.
-## 7. What is a closure?
-A closure is a combination of a function and the lexical environment within which it was defined.
-## 8. What is a prototype?
-A prototype is a built-in object that is used to create and manage objects in JavaScript.
-## 9. What is a constructor function?
-A constructor function is a function that is used to create objects.
-## 10. What is a class?
-A class is a template for creating objects.
-## 11. What is a prototype chain?
-A prototype chain is a chain of objects that are used to create and manage objects in JavaScript.
+<div id="Advanced">
+
+  ## 1. What are React hooks?
+  React hooks are functions that allow you to "hook into" React state and lifecycle features from functional components. Examples include useState, useEffect, and useContext.
+
+  ## 2. What is the useState hook? Provide an example.
+  The useState hook is used to manage state in functional components. Example:
+
+  js
+  Copy code
+  const [count, setCount] = useState(0);
+  ## 3. What is the useEffect hook?
+  The useEffect hook allows you to perform side effects in functional components, such as fetching data, updating the DOM, or subscribing to events. It replaces lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount.
+
+  ## 4. What is the purpose of the useContext hook?
+  The useContext hook allows you to access the value of a context directly in functional components, without needing to use a Consumer component.
+
+  ## 5. How do you manage side effects in React using useEffect?
+  useEffect accepts a function and an optional dependency array. The function runs after the render and can clean up when the component unmounts or when dependencies change.
+  Example:
+
+  js
+  Copy code
+  <SyntaxHighlighter language="javascript" style={atomOneDark}>
+    {`
+  useEffect(() => {
+  fetchData();
+}, []);
+  `}
+  </SyntaxHighlighter>
+  ## 6. What is the useReducer hook, and when should you use it?
+  useReducer is a hook for managing complex state logic in functional components. It is ideal for cases where you have multiple state variables that depend on each other or involve complex logic. It works similarly to Redux reducers.
+
+  ## 6. What is the useCallback hook?
+  The useCallback hook returns a memoized version of a callback function that only changes if one of the dependencies has changed. It helps prevent unnecessary re-renders of child components.
+
+  ## 7. What is the useMemo hook?
+  The useMemo hook memoizes the result of a computation so that it is only recalculated when its dependencies change, optimizing performance in case of expensive calculations.
+
+  ## 8. What is the useRef hook?
+  useRef is a hook that returns a mutable object with a .current property, allowing you to persist values across renders without causing re-renders. It can also be used to directly access DOM elements.
+
+  ## 9. What is the difference between useEffect and useLayoutEffect?
+  useEffect runs after the render is committed to the screen, while useLayoutEffect runs synchronously after the DOM has been mutated but before the browser has painted.
+
+  ## 10. What is the useImperativeHandle hook?
+  useImperativeHandle allows you to customize the instance value that is exposed when using ref in functional components. It is often used in combination with forwardRef.
+
+  ## 11. What is the useContext hook, and how is it used?
+  useContext is used to subscribe to the value of a context within a functional component. It allows components to access shared data without passing props down manually.
+
+  ## 12. What are the benefits of using React hooks over class components?
+  Hooks provide a simpler and more concise way to manage state and side effects in functional components. They also eliminate the need for lifecycle methods and allow sharing stateful logic across components.
+
+  ## What are custom hooks in React?
+  Custom hooks are JavaScript functions that can use other hooks to share reusable logic across components. For example, a custom hook could be created to fetch data from an API.
+
+  ## 13. How does useEffect work with dependencies?
+  useEffect accepts a dependency array. If any value in the array changes, the effect will run again. If the array is empty, the effect will run once when the component mounts.
+
+  ## 14. Can you explain the cleanup function in useEffect?
+  The cleanup function is returned from the effect function and is run when the component unmounts or when the effect dependencies change. It’s used to clean up subscriptions, timers, or other side effects.
+
+  ## What happens when a useEffect hook has no dependencies?
+  If a useEffect hook has no dependencies, it runs after every render.
+
+  ## 15. What is the useLayoutEffect hook used for?
+  useLayoutEffect is used when you need to measure DOM elements and make changes to the DOM synchronously before the browser paints.
+
+  ## 16. How do you prevent unnecessary re-renders in React?
+  To prevent unnecessary re-renders, you can use React.memo to memoize components, useCallback for callback functions, and useMemo for expensive calculations.
+
+  ## 17. How do you pass state between components using hooks?
+  State can be passed between components using props, or shared using React’s useContext hook, which provides access to context values across the component tree.
+
+  ## 18. How does the useState hook work with functions?
+  The useState hook can accept a function that returns the initial state. This is useful when the initial state depends on a calculation or value that is expensive to compute.
+
+  ## 19. What are the limitations of React hooks?
+  Hooks cannot be used conditionally (i.e., they must be called in the same order on every render), and they cannot be called inside loops, conditions, or nested functions.
+
+  ## 20. What is the useEffect hook's behavior when no dependencies are provided?
+  When no dependencies are provided, useEffect runs after every render, similar to the componentDidUpdate lifecycle method in class components.
+
+  ## 21. How do you handle forms in React using hooks?
+  You can handle forms in React by using useState to track form values and useEffect to manage form validation or submissions.
+
+  ## 22. How do you manage errors in React hooks?
+  Errors in React hooks can be managed with try/catch blocks within useEffect or other hooks, and by using error boundaries at higher levels in the component tree.
+
+  ## 23. What is React’s Suspense?
+  Suspense is a React feature that helps manage asynchronous rendering by waiting for certain operations (like data fetching) to complete before rendering UI.
+
+  ## 24. What is React.lazy?
+  React.lazy allows you to dynamically import components in React, enabling code-splitting and reducing the initial bundle size.
+
+  ## 25. How do you handle state management in React applications?
+  State management in React can be done using local component state, the context API, or third-party libraries like Redux or MobX.
+
+  ## 26. What is the Context API, and when should you use it?
+  The Context API is used to share values (like theme or authentication status) between components without prop drilling. It is ideal for global state management.
+
+  ## 27. What is Redux, and how does it work with React?
+  Redux is a state management library that stores application state in a single immutable store. It uses actions and reducers to update state and is commonly used with React for managing large-scale application state.
+
+  ## 28. What is a higher-order component (HOC) in React?
+  A higher-order component is a function that takes a component and returns a new component with additional functionality, such as data fetching or authorization checks.
+
+  ## 29. What is the difference between state and props in React?
+  Props are read-only values passed to a component from its parent, while state is managed within a component and can be changed over time.
+
+  ## 30. What is React.memo used for?
+  React.memo is used to memoize functional components, preventing re-renders if the props have not changed.
+
+  ## 31. What are controlled components in React?
+  Controlled components are form elements whose value is controlled by React state, with every change in the input being handled through an event.
+
+  ## 32. How do you optimize performance in React applications?
+  Performance can be optimized by using memoization techniques (React.memo, useMemo, useCallback), lazy loading, code splitting, and avoiding unnecessary re-renders.
+
+  ## 33. What is the difference between useState and useReducer?
+  useState is for managing simple state, while useReducer is ideal for complex state logic and when multiple state updates depend on each other.
+
+  ## What is the difference between class components and functional components with hooks?
+  Class components manage state and lifecycle methods using this, while functional components with hooks manage state and side effects using functions like useState and useEffect.
+
+  ## 34. What is React.PureComponent?
+  React.PureComponent is a base class for components that implement shouldComponentUpdate with a shallow prop and state comparison, helping to prevent unnecessary re-renders.
+
+  ## 35. How do you handle routing in React?
+  Routing in React is typically handled using the react-router-dom library, which provides components like Route, Link, and BrowserRouter to manage navigation.
+
+  ## What is React’s Virtual DOM, and how does it work?
+  The Virtual DOM is an in-memory representation of the real DOM that allows React to perform efficient updates. When state or props change, React compares the Virtual DOM to the real DOM (a process called "reconciliation") and updates only the necessary parts.
+
+  ## 36. What is React Server-side Rendering (SSR)?
+  SSR is the process of rendering React components on the server and sending HTML to the browser, improving initial load time and SEO.
+
+  ## 37. What is React’s Concurrent Mode?
+  Concurrent Mode is an experimental feature in React that allows React to interrupt rendering and prioritize important updates, improving the app’s responsiveness and performance.
+
+  ## 38. What is the purpose of key in React lists?
+  The key attribute helps React identify which items have changed, been added, or removed in lists, enabling efficient re-rendering of only the modified elements.
+
+  ## 39. How does React handle event binding in functional components?
+  In functional components, event handlers are automatically bound to the component context, unlike class components where you need to bind event handlers manually in the constructor.
+
+  ## 40. What is the difference between componentDidMount and useEffect?
+  componentDidMount is used in class components to run code after the initial render, while useEffect can run side effects after every render or when dependencies change in functional components.
+
+  ## 41. How do you handle error boundaries in React?
+  Error boundaries are components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of crashing the app.
+
+  ## 42. What is a render prop in React?
+  A render prop is a technique for sharing code between components by passing a function as a prop that returns a React element, allowing dynamic rendering.
+
+  ## 43. What is React Fragments?
+  React Fragments allow you to group multiple elements without adding an extra node to the DOM, providing cleaner code and reducing unnecessary wrapping divs.
+
+  ## 44. What is the use of React.forwardRef?
+  React.forwardRef allows you to pass a ref through a component to one of its children, enabling direct manipulation of the child component’s DOM.
+
+  ## 45. What are hooks’ rules in React?
+  Hooks must be called at the top level of functional components and not conditionally. They must also be called in the same order on every render.
+
+
 </div>
